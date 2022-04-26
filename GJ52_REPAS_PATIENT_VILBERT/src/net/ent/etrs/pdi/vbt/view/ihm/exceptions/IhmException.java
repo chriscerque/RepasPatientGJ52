@@ -1,0 +1,13 @@
+package net.ent.etrs.pdi.vbt.view.ihm.exceptions;
+
+public class IhmException extends Exception {
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //					                    METHODS				                         	//
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    public IhmException(String message) {
+        super(message);
+    }
+
+}

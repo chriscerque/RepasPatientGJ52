@@ -1,0 +1,51 @@
+package net.ent.etrs.pdi.vbt.model.entities.references;
+
+import net.ent.etrs.pdi.vbt.model.entities.exceptions.RegimeAlimentaireException;
+
+public enum RegimeAlimentaire {
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //                                     ENUMERATES                                       //
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    VEGETARIEN ("Végétarien"),
+    MIXE ("Mixe"),
+    SANS_SEL ("Sans sel"),
+    DIABETIQUE ("Diabétique"),
+    VEGAN ("Végan");
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //                                     ATTRIBUTES                                       //
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    private String libelle;
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //				                      CONSTRUCTORS				                        //
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    RegimeAlimentaire(String libelle) {
+        this.libelle = libelle;
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //					                    GETTERS					                      	//
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    public String getLibelle() {
+        return libelle;
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //					                    METHODS				                         	//
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    public RegimeAlimentaire getByLibelle(String libelle) throws RegimeAlimentaireException {
+        for (RegimeAlimentaire regimeAlimentaire : RegimeAlimentaire.values()) {
+            if(regimeAlimentaire.getLibelle().replace(' ', '_').toUpperCase().equals(libelle)) {
+                return  regimeAlimentaire;
+            }
+        }
+        throw new RegimeAlimentaireException(C_MSG.REGIME_ALIMENTAIRE_GET_BY_LIBELLE_EXCEPTION);
+    }
+}

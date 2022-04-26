@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTreeColorHighlighter">
+    <files>
+      <node color="1" path="$PROJECT_DIR$/src/marine/etrs/dao" />
+      <node color="6" path="$PROJECT_DIR$/src/marine/etrs/dao/AbstractLogementDao.java" />
+      <node color="3" path="$PROJECT_DIR$/src/marine/etrs/dao/AbstractPatientDao.java" />
+      <node color="1" path="$PROJECT_DIR$/src/marine/etrs/dao/AbstractXxDao.java" />
+      <node color="1" path="$PROJECT_DIR$/src/marine/etrs/dao/Dao.java" />
+      <node color="1" path="$PROJECT_DIR$/src/marine/etrs/dao/DaoFactory.java" />
+      <node color="1" path="$PROJECT_DIR$/src/marine/etrs/dao/excpetions" />
+      <node color="1" path="$PROJECT_DIR$/src/marine/etrs/dao/excpetions/DaoException.java" />
+      <node color="6" path="$PROJECT_DIR$/src/marine/etrs/dao/LogementMemDao.java" />
+      <node color="6" path="$PROJECT_DIR$/src/marine/etrs/dao/LogementMemDaoImpl.java" />
+      <node color="3" path="$PROJECT_DIR$/src/marine/etrs/dao/PatientDao.java" />
+      <node color="3" path="$PROJECT_DIR$/src/marine/etrs/dao/PatientDaoImpl.java" />
+      <node color="1" path="$PROJECT_DIR$/src/marine/etrs/dao/XxDao.java" />
+      <node color="1" path="$PROJECT_DIR$/src/marine/etrs/dao/XxDaoImpl.java" />
+      <node color="2" path="$PROJECT_DIR$/src/marine/etrs/ihm_Vue" />
+      <node color="9" path="$PROJECT_DIR$/src/marine/etrs/model_Metier" />
+      <node color="7" path="$PROJECT_DIR$/src/marine/etrs/model_Metier/entities_Classes_Enum" />
+      <node color="7" path="$PROJECT_DIR$/src/marine/etrs/model_Metier/entities_Classes_Enum/exceptions" />
+      <node color="7" path="$PROJECT_DIR$/src/marine/etrs/model_Metier/entities_Classes_Enum/factory" />
+      <node color="7" path="$PROJECT_DIR$/src/marine/etrs/model_Metier/entities_Classes_Enum/interfacies" />
+      <node color="7" path="$PROJECT_DIR$/src/marine/etrs/model_Metier/entities_Classes_Enum/Menu.java" />
+      <node color="7" path="$PROJECT_DIR$/src/marine/etrs/model_Metier/entities_Classes_Enum/Mois.java" />
+      <node color="7" path="$PROJECT_DIR$/src/marine/etrs/model_Metier/entities_Classes_Enum/outils" />
+      <node color="4" path="$PROJECT_DIR$/src/marine/etrs/presenteur" />
+      <node color="5" path="$PROJECT_DIR$/src/marine/etrs/start" />
+    </files>
+    <colors>
+      <color id="1" value="#593f59" name="Color 1" enabled="true" />
+      <color id="2" value="#3a2c59" name="Color 2" enabled="true" />
+      <color id="3" value="#b46c27" name="Color 3" enabled="true" />
+      <color id="4" value="#8c5845" name="Color 4" enabled="true" />
+      <color id="5" value="#0f2f47" name="Color 5" enabled="true" />
+      <color id="6" value="#0f0f1f" name="Color 6" enabled="true" />
+      <color id="7" value="#311333" name="Color 7" enabled="true" />
+      <color id="8" value="#1e1e1e" name="Color 8" enabled="true" />
+      <color id="9" value="#6c1f31" name="Color 9" enabled="true" />
+      <color id="10" name="Color 10" />
+      <color id="11" name="Color 11" />
+      <color id="12" name="Color 12" />
+      <color id="13" name="Color 13" />
+      <color id="14" name="Color 14" />
+      <color id="15" name="Color 15" />
+      <color id="16" name="Color 16" />
+    </colors>
+    <option name="marksForCollapsedHighlights" value="Dots" />
+  </component>
+</project>

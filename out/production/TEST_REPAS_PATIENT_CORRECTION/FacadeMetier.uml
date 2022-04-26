@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>net.ent.etrs.model.facade.FacadeMetier</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">net.ent.etrs.model.facade.FacadeMetier</node>
+    <node x="0.0" y="236.0">net.ent.etrs.model.facade.FacadeMetierImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.ent.etrs.model.facade.FacadeMetierImpl" target="net.ent.etrs.model.facade.FacadeMetier" relationship="REALIZATION">
+      <point x="0.0" y="-127.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="119.0" y="245.0" />
+  <SelectedNodes>
+    <node>net.ent.etrs.model.facade.FacadeMetierImpl</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

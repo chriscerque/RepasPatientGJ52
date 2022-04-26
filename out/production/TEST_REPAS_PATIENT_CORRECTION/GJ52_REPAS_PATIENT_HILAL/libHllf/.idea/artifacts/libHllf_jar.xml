@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="libHllf:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/libHllf_jar</output-path>
+    <root id="archive" name="libHllf.jar">
+      <element id="module-output" name="libHllf" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+Le design pattern Singleton permet de s'assurer qu'une classe ne puisse produire qu'une seule et unique instance. 
+
+Tester nul sur chaque attribut
+(Objects.isNull(libelle) || libelle.isEmpty())
+
+
+Exemple  si 0..1 pas de besoin d'etre le constructeur juste en paramatre d'une classe
+List<LigneCommande> listeLignesCommande = new ArrayList<>();
+
+Exemple de LocalDate en paramatre d'une classe
+private LocalDate dateCommande = LocalDate.now();
+
+Dans le setter :
+if (Objects.isNull(dateCommande) || dateCommande.isBefore(LocalDate.now()))

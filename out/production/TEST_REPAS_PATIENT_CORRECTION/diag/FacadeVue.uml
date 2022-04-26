@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>net.ent.etrs.view.FacadeVue</OriginalElement>
+  <nodes>
+    <node x="100.0" y="0.0">net.ent.etrs.view.FacadeVue</node>
+    <node x="0.0" y="302.0">net.ent.etrs.view.FacadeVueImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.ent.etrs.view.FacadeVueImpl" target="net.ent.etrs.view.FacadeVue" relationship="REALIZATION">
+      <point x="0.0" y="-203.5" />
+      <point x="0.0" y="126.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="272.0" y="354.5" />
+  <SelectedNodes>
+    <node>net.ent.etrs.view.FacadeVue</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

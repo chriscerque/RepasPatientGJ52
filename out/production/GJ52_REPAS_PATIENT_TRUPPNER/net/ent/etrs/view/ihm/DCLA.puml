@@ -1,0 +1,69 @@
+@startuml
+'https://plantuml.com/class-diagram
+package ihm.menus{
+interface Saisissable{
++ getStrMenu(): String
++ saisirChoixEntierMenu( Ihm vue):int  throws Exception
+}
+class Menu{
+# lesLibelles: String[]
+# titre: String
+----
++ abstract getStrMenu(): String
++ abstract saisirChoixEntierMenu( Ihm vue):int  throws Exception
++ abstract getCharFrom( int chx ):char
+
+}
+Saisissable<|..Menu
+class MenuInt{
+- lesChoix: int[]
+}
+class MenuChar{
+- lesChoix: char[]
+}
+Menu<|--MenuInt
+Menu<|--MenuChar
+}
+package ihm{
+enum TypeAlignement{
+  RIGHT,
+  LEFT,
+  JUSTIFY,
+  CENTER;
+}
+enum TypeIhm{
+CONSOLE,
+JPANEL;
+}
+
+interface Ihm{
++ saisirChaine(String invite): String
++ saisirChoixMenu(String[] tabloStr) throws IhmException:int
++ saisirchoixMenu(String strMenu,int min,int max): int
++ saisirEntier(String msg, int min, int max):int
++ afficherChaine(String msg, boolean sautLigne)
++ afficherChaine(String msg)
++ afficherTableau(String titre,String[] tabEntetes,String[][] tablo, TypeAlignement[] tabTa, boolean withNoLine)
++ afficherErreur(String msg);
+}
+
+class FabriqueIhm{
+- FabriqueIhm()
+---
++ static creerIhmconsole():Ihm
++ static Ihm creerJPanel():Ihm
+}
+
+Ihm<|..ConsoleIhmImpl
+Ihm<|..JPanelIhmImpl
+
+class OutilIhm{
++ {static}  construireMenu(String strMenu,Object[] tabloDesOptions):String
++ {static}  getStringTabloFrom(Object[] tabloOptions):String[]
+
+//--------------formattage de chaine
++ {static}  center(String s, int size, char pad) :String
++ {static}  alignerTexte(TypeAlignement ta, String str, int lgm):String
+}
+}
+@enduml

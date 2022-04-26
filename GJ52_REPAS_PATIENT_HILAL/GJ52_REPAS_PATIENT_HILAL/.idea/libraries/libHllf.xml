@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libHllf">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/libHllf.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

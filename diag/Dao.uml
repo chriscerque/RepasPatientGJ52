@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>net.ent.etrs.model.dao.Dao</OriginalElement>
+  <nodes>
+    <node x="13.0" y="337.0">net.ent.etrs.model.dao.AbstractRepasDao</node>
+    <node x="322.0" y="24.0">net.ent.etrs.model.dao.DaoFactory</node>
+    <node x="22.5" y="258.0">net.ent.etrs.model.dao.IRepasMemDao</node>
+    <node x="0.0" y="464.0">net.ent.etrs.model.dao.RepasMemDao</node>
+    <node x="135.5" y="0.0">net.ent.etrs.model.dao.Dao</node>
+    <node x="243.5" y="258.0">net.ent.etrs.model.dao.IPatientMemDao</node>
+    <node x="221.0" y="464.0">net.ent.etrs.model.dao.PatientMemDao</node>
+    <node x="234.0" y="337.0">net.ent.etrs.model.dao.AbstractPatientDao</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.ent.etrs.model.dao.AbstractRepasDao" target="net.ent.etrs.model.dao.IRepasMemDao" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="net.ent.etrs.model.dao.PatientMemDao" target="net.ent.etrs.model.dao.AbstractPatientDao" relationship="GENERALIZATION">
+      <point x="0.0" y="-127.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="net.ent.etrs.model.dao.AbstractPatientDao" target="net.ent.etrs.model.dao.IPatientMemDao" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="net.ent.etrs.model.dao.RepasMemDao" target="net.ent.etrs.model.dao.AbstractRepasDao" relationship="GENERALIZATION">
+      <point x="0.0" y="-127.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="net.ent.etrs.model.dao.IPatientMemDao" target="net.ent.etrs.model.dao.Dao" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="324.5" y="233.0" />
+      <point x="212.5" y="233.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+    <edge source="net.ent.etrs.model.dao.IRepasMemDao" target="net.ent.etrs.model.dao.Dao" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="100.5" y="233.0" />
+      <point x="212.5" y="233.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="364.0" y="359.0" />
+  <SelectedNodes>
+    <node>net.ent.etrs.model.dao.DaoFactory</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

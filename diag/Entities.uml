@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>net.ent.etrs.model.entities.EntitiesFactory</OriginalElement>
+  <nodes>
+    <node x="-217.03033838973164" y="25.548424737456248">net.ent.etrs.model.entities.Patient</node>
+    <node x="164.15781796966166" y="441.59859976662773">net.ent.etrs.model.references.RegimeAlimentaire</node>
+    <node x="473.3459743290549" y="441.59859976662773">net.ent.etrs.model.references.TypeRepas</node>
+    <node x="349.27421236872806" y="740.9457409568262">net.ent.etrs.model.entities.EntitiesFactory</node>
+    <node x="349.27421236872806" y="25.54842473745625">net.ent.etrs.model.entities.Repas</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.ent.etrs.model.entities.Patient" target="net.ent.etrs.model.entities.Repas" relationship="TO_MANY">
+      <point x="164.0" y="-124.99999999999997" />
+      <point x="-164.0" y="-15.0" />
+    </edge>
+    <edge source="net.ent.etrs.model.entities.EntitiesFactory" target="net.ent.etrs.model.entities.Patient" relationship="CREATE">
+      <point x="-172.5" y="0.0" />
+      <point x="-53.03033838973164" y="790.4457409568262" />
+      <point x="0.0" y="281.0" />
+    </edge>
+    <edge source="net.ent.etrs.model.entities.Repas" target="net.ent.etrs.model.references.TypeRepas" relationship="TO_ONE">
+      <point x="54.57176196032685" y="170.99999999999997" />
+      <point x="0.0" y="-83.0" />
+    </edge>
+    <edge source="net.ent.etrs.model.entities.Repas" target="net.ent.etrs.model.references.RegimeAlimentaire" relationship="TO_MANY">
+      <point x="-164.0" y="0.0" />
+      <point x="322.0" y="196.54842473745626" />
+      <point x="322.0" y="594.5985997666278" />
+      <point x="128.0" y="15.0" />
+    </edge>
+    <edge source="net.ent.etrs.model.entities.EntitiesFactory" target="net.ent.etrs.model.entities.Repas" relationship="CREATE">
+      <point x="-65.92823803967315" y="-49.5" />
+      <point x="-57.42823803967315" y="170.99999999999997" />
+    </edge>
+    <edge source="net.ent.etrs.model.entities.Patient" target="net.ent.etrs.model.references.RegimeAlimentaire" relationship="TO_MANY">
+      <point x="36.0" y="281.0" />
+      <point x="-17.03033838973164" y="622.7252042007001" />
+      <point x="292.15781796966166" y="622.7252042007001" />
+      <point x="0.0" y="-138.0" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal Groups" zoom="1.0" showDependencies="true" x="238.5" y="432.49999999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

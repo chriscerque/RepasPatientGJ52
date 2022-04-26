@@ -1,0 +1,41 @@
+@startuml
+'https://plantuml.com/class-diagram
+package ihm{
+enum TypeAlignement{
+  RIGHT,
+  LEFT,
+  JUSTIFY,
+  CENTER;
+}
+
+interface Ihm{
++ saisirChaine(String invite): String
++ saisirChoixMenu(T[] array) throws IhmException:T
++ saisirChoixMenu(String strMenu,int min,int max): int
++ saisirEntier(String msg, int min, int max):int
++ afficherChaine(String msg, boolean sautLigne)
++ afficherChaine(String msg)
++ afficherTableau(String titre,String[] tabEntetes,String[][] tablo, TypeAlignement[] tabTa, boolean withNoLine)
++ afficherErreur(String msg);
+}
+
+class FabriqueIhm{
+- FabriqueIhm()
+---
++ static creerIhmConsole():Ihm
++ static Ihm creerJPanel():Ihm
+}
+
+Ihm<|..ConsoleIhmImpl
+Ihm<|..JPanelIhmImpl
+
+class OutilIhm{
++ {static}  construireMenu(String strMenu,Object[] tabloDesOptions):String
++ {static}  getStringTabloFrom(Object[] tabloOptions):String[]
+
+//--------------formatage de chaine
++ {static}  center(String s, int size, char pad) :String
++ {static}  alignerTexte(TypeAlignement ta, String str, int lgm):String
+}
+}
+@enduml

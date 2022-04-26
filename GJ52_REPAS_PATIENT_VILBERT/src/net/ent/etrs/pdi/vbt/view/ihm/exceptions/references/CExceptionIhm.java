@@ -1,0 +1,24 @@
+package net.ent.etrs.pdi.vbt.view.ihm.exceptions.references;
+
+public class CExceptionIhm {
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //				                      CONSTRUCTORS				                        //
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    private CExceptionIhm() {
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //					                    CONSTANTES			                         	//
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    public static final String MSG_ERR_TYPE_INPUT = "ERR : MAUVAIS TYPE DE FORMAT!";
+
+    public static final String[] CHOIX_BOOLEAN = {
+            "Oui",
+            "Non"
+    };
+
+    public static final String CHOIX = "CHOIX : ";
+}
