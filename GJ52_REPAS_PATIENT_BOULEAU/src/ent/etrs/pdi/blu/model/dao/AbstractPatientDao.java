@@ -13,10 +13,8 @@ import ent.etrs.pdi.blu.model.entities.references.TypeRepas;
 
 import java.time.LocalDate;
 import java.time.Month;
-import java.util.ArrayList;
-import java.util.List;
 
-public abstract class AbstractPatientDao implements Dao <Patient, String>  {
+public abstract class AbstractPatientDao implements Dao<Patient, String> {
 
 ////////////////////////////////////////////////////////////////////////////
 //----------------------------- ATTRIBUTS --------------------------------//
@@ -123,7 +121,8 @@ public abstract class AbstractPatientDao implements Dao <Patient, String>  {
 //            this.create(tintin);
 //            this.create(tournesol);
 
-        } catch (PatientConstructionException | PatientException | RepasConstructionException | DaoException | RepasException e) {
+        } catch (PatientConstructionException | PatientException | RepasConstructionException | DaoException |
+                 RepasException e) {
             e.printStackTrace();
         }
 

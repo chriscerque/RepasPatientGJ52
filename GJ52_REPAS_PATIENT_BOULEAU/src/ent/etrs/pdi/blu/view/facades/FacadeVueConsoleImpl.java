@@ -1,19 +1,15 @@
 package ent.etrs.pdi.blu.view.facades;
 
-import ent.etrs.pdi.blu.model.entities.EntitiesFactory;
 import ent.etrs.pdi.blu.model.entities.Patient;
 import ent.etrs.pdi.blu.model.entities.references.Repas;
-import ent.etrs.pdi.blu.model.references.C_MSG;
 import ent.etrs.pdi.blu.view.exceptions.ViewException;
 import ent.etrs.pdi.blu.view.ihm.FactoryIhm;
 import ent.etrs.pdi.blu.view.ihm.Ihm;
 import ent.etrs.pdi.blu.view.ihm.exceptions.IhmException;
 import ent.etrs.pdi.blu.view.references.ConstantesView;
 
-import java.math.BigDecimal;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public final class FacadeVueConsoleImpl implements FacadeVue {

@@ -3,12 +3,8 @@
  */
 package ent.etrs.pdi.blu.model.references;
 
-import ent.etrs.pdi.blu.model.entities.Patient;
-import ent.etrs.pdi.blu.view.references.ConstantesView;
-
 /**
  * @author christophe.cerqueira
- *
  */
 public final class C_MSG {
 

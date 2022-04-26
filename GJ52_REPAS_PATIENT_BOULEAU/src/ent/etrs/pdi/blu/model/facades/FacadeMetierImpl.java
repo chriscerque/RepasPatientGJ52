@@ -5,10 +5,8 @@ import ent.etrs.pdi.blu.model.dao.AbstractRepasDao;
 import ent.etrs.pdi.blu.model.dao.DaoFactory;
 import ent.etrs.pdi.blu.model.dao.exceptions.DaoException;
 import ent.etrs.pdi.blu.model.entities.Patient;
-import ent.etrs.pdi.blu.model.entities.references.ConstantesModel;
 import ent.etrs.pdi.blu.model.entities.references.Repas;
 import ent.etrs.pdi.blu.model.facades.exceptions.BusinessException;
-import ent.etrs.pdi.blu.model.facades.exceptions.BusinessExceptionNus;
 
 import java.util.List;
 
@@ -19,7 +17,8 @@ public class FacadeMetierImpl implements FacadeMetier {
     private AbstractRepasDao repasDao = DaoFactory.fabriquerRepaslDao();
 
     /*------- CONSTRUCTEUR(S) -------*/
-    protected FacadeMetierImpl(){}
+    protected FacadeMetierImpl() {
+    }
 
     /*------- METHODES IMPLEMENTEES -------*/
 
@@ -35,6 +34,7 @@ public class FacadeMetierImpl implements FacadeMetier {
 
     /**
      * methode permettant recup du patient par son id
+     *
      * @param patientId
      * @return
      * @throws BusinessException
@@ -52,6 +52,7 @@ public class FacadeMetierImpl implements FacadeMetier {
 
     /**
      * methode permettant de lister les patients
+     *
      * @return
      */
 
@@ -63,6 +64,7 @@ public class FacadeMetierImpl implements FacadeMetier {
 
     /**
      * methode permettant de lister les repas
+     *
      * @return
      */
 
@@ -90,7 +92,7 @@ public class FacadeMetierImpl implements FacadeMetier {
     }
 
     @Override
-    public void mettreAJourPatient(Patient patient) throws BusinessException{
+    public void mettreAJourPatient(Patient patient) throws BusinessException {
         try {
             this.patientDao.update(patient);
         } catch (DaoException e) {

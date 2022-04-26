@@ -2,7 +2,6 @@ package ent.etrs.pdi.blu.model.dao;
 
 import ent.etrs.pdi.blu.model.dao.exceptions.DaoException;
 import ent.etrs.pdi.blu.model.entities.EntitiesFactory;
-import ent.etrs.pdi.blu.model.entities.exceptions.PatientException;
 import ent.etrs.pdi.blu.model.entities.exceptions.RepasConstructionException;
 import ent.etrs.pdi.blu.model.entities.exceptions.RepasException;
 import ent.etrs.pdi.blu.model.entities.references.RegimeAlimentaire;
@@ -10,10 +9,8 @@ import ent.etrs.pdi.blu.model.entities.references.Repas;
 import ent.etrs.pdi.blu.model.entities.references.TypeRepas;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
-public abstract class AbstractRepasDao implements Dao <Repas, String>  {
+public abstract class AbstractRepasDao implements Dao<Repas, String> {
 
 
 ////////////////////////////////////////////////////////////////////////////
