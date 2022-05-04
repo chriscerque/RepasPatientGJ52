@@ -1,6 +1,8 @@
 package net.ent.etrs.sgr.view.ihm.references;
 
-import static net.ent.etrs.view.ihm.references.TableauxIhm.TABLO_STR_MENU;
+//import static net.ent.etrs.view.ihm.references.TableauxIhm.TABLO_STR_MENU;
+
+import static net.ent.etrs.sgr.view.ihm.references.TableauxIhm.TABLO_STR_MENU;
 
 public final class ConstantesIhm {
 

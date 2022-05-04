@@ -2,10 +2,15 @@ package net.ent.etrs.sgr.view.ihm;
 
 //Import de swing pour pouvoir afficher ou saisir dans des fenêtres!
 
-import net.ent.etrs.view.ihm.exceptionsIhm.BooleanException;
-import net.ent.etrs.view.ihm.exceptionsIhm.OutilsMenuException;
-import net.ent.etrs.view.ihm.outils.MesOutils;
-import net.ent.etrs.view.ihm.references.ConstantesIhm;
+//import net.ent.etrs.view.ihm.exceptionsIhm.BooleanException;
+//import net.ent.etrs.view.ihm.exceptionsIhm.OutilsMenuException;
+//import net.ent.etrs.view.ihm.outils.MesOutils;
+//import net.ent.etrs.view.ihm.references.ConstantesIhm;
+
+import net.ent.etrs.sgr.view.ihm.exceptionsIhm.BooleanException;
+import net.ent.etrs.sgr.view.ihm.exceptionsIhm.OutilsMenuException;
+import net.ent.etrs.sgr.view.ihm.outils.MesOutils;
+import net.ent.etrs.sgr.view.ihm.references.ConstantesIhm;
 
 import javax.swing.*;
 import java.time.LocalDate;

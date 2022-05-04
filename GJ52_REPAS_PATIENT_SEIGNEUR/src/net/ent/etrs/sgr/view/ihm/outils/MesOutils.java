@@ -1,7 +1,10 @@
 package net.ent.etrs.sgr.view.ihm.outils;
 
-import net.ent.etrs.view.ihm.exceptionsIhm.OutilsMenuException;
-import net.ent.etrs.view.ihm.references.ConstantesIhm;
+//import net.ent.etrs.view.ihm.exceptionsIhm.OutilsMenuException;
+//import net.ent.etrs.view.ihm.references.ConstantesIhm;
+
+import net.ent.etrs.sgr.view.ihm.exceptionsIhm.OutilsMenuException;
+import net.ent.etrs.sgr.view.ihm.references.ConstantesIhm;
 
 import java.util.List;
 import java.util.Objects;
